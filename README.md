@@ -60,7 +60,7 @@
 
    DOTS（Data-Oriented Tech Stack）在特定情境下，尤其是独立开发者考虑使用Unity的云服务代理Netcode时，也是一个极具吸引力的选择。Unity的Netcode是一个用于构建多人联网游戏的云服务代理，它旨在简化多人游戏的开发和部署。当你的游戏需要支持多人联机，并且你计划使用Unity的Netcode服务时，DOTS可以作为一个优秀的游戏端框架。
 
-## 2 GameFramework
+## 2.1 GameFramework
 
 ### 2.1.1 框架概述
 
