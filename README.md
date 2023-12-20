@@ -265,4 +265,4 @@ QFramework适用于一些中大型Unity项目，特别是那些对代码结构�
 | **生态与插件**           | 成熟的插件和生态系统，例如 Element UI 等            | Vben Admin 插件提供了一系列模块和组件             |
 | **适用场景**             | 适用于传统的 Vue 2.x 项目，对社区支持要求较高的项目 | 适用于基于 Vue 3.x 和 Vite 2.x 的现代管理系统项目 |
 
-`vue-element-admin`的社区更活跃一点，如果只是简单的后台服务，不涉及权限管理、菜单管理等功能，推荐使用`vue-element-admin`；如果你有着强烈的菜单和权限功能需求，就只能用**vue-vben-admin**，当然你也可以和我的开源项目[CrazyCar](https://github.com/TastSong/CrazyCar)，在`vue-element-admin`基础上做一些修改。
+`vue-element-admin` 的社区更活跃一点。如果只涉及简单的后台服务，没有强烈的菜单和权限功能需求，建议使用 `vue-element-admin`。但若有菜单和权限功能的需求，推荐使用 `vue-vben-admin`。同时，也可以考虑结合我的开源项目 [CrazyCar](https://github.com/TastSong/CrazyCar)，在 `vue-element-admin` 的基础上进行一些修改。
