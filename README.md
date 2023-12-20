@@ -29,7 +29,9 @@
 
 ### 1.1.2 应用
 
-最好放视频
+[Unity DOTS](https://github.com/Unity-Technologies/DOTS-training-samples)是一个官方的项目示例，该示例项目提供了一系列基于DOTS的训练样本，旨在帮助开发者学习和实践DOTS的使用。通过这些样本，你可以深入了解DOTS在不同场景下的应用，包括但不限于物理模拟、动画系统、多线程处理等。
+
+*注意一定要使用对用版本的Unity打开，DOTS处于不断的迭代和发展之中，对应的Unity版本和依赖版本相对较为严格。*
 
 ### 1.1.3 优缺点
 
