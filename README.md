@@ -176,9 +176,9 @@ QFramework适用于一些中大型Unity项目，特别是那些对代码结构�
 
 上表对DOTS（ECS）、ET、GameFramework、QFramework进行了横向对比，以帮助了解它们的主要特性、优缺点、适用场景和一些特殊关注点。实际选择框架应根据项目需求、开发团队熟悉度和项目规模等因素进行综合考虑；除了DOTS（ECS）、ET、GameFramework、QFramework之外，还有一些其他不错的框架：
 
-1. JEngine是一个轻量级的基于Unity的游戏框架，致力于提供简洁高效的开发体验。
-2. TEngine是一个基于Unity的游戏开发框架，提供一系列工具和功能，旨在提高开发效率。
-3. IFramework是一个Unity框架，旨在提供清晰简洁的代码结构和工具，方便开发者进行Unity项目开发。
+1. [JEngine](https://github.com/JasonXuDeveloper/JEngine)是一个轻量级的基于Unity的游戏框架，致力于提供简洁高效的开发体验。
+2. [TEngine](https://github.com/ALEXTANGXIAO/TEngine)是一个基于Unity的游戏开发框架，提供一系列工具和功能，旨在提高开发效率。
+3. [IFramework](https://github.com/OnClick9927/IFramework)是一个Unity框架，旨在提供清晰简洁的代码结构和工具，方便开发者进行Unity项目开发。
 
 这些框架在各自的领域都有一定的优势，可以根据项目需求和开发者的偏好进行选择。
 
@@ -256,7 +256,7 @@ QFramework适用于一些中大型Unity项目，特别是那些对代码结构�
 
 ## 2.3 总结
 
-### 横向对比：vue-element-admin 与 vue-vben-admin
+横向对比：vue-element-admin 与 vue-vben-admin
 
 | **特征**                 | **vue-element-admin**                               | **vue-vben-admin**                                |
 | ------------------------ | --------------------------------------------------- | ------------------------------------------------- |
