@@ -571,12 +571,36 @@ WebSocket是一种在单个TCP连接上进行全双工通信的协议。通过�
 
 #### 4.4.1.1 Lua家族
 
+- [xlua-framework](https://github.com/smilehao/xlua-framework): 基于xLua的Unity热更新框架，支持Unity的所有平台。提供简单易用的API，广泛应用于Unity游戏开发中。其特点包括高性能、低内存占用以及与C#的无缝集成。
+- [LuaFramework](https://github.com/jarjin/LuaFramework_UGUI_V2): 另一个基于Lua的Unity热更新框架，支持Unity的UGUI系统，提供完整的解决方案。它注重与Unity的UI系统的整合，使得在使用热更新的同时，UI的维护也变得更加方便。
+
 #### 4.4.1.2 JEngine
 
-#### 4.4.1.3 HybridCLR 
+[JEngine](https://github.com/JasonXuDeveloper/JEngine): 一款面向Unity的热更新框架，支持ILRuntime和Mono两种模式。JEngine提供了完善的资源管理、热更新机制，使得在Unity游戏中实现热更新变得更加便捷。
+
+#### 4.4.1.3 HybridCLR
+
+HybridCLR: 一个支持Unity的热更新框架，同时支持ILRuntime和Mono模式。HybridCLR的设计目标是实现高性能、低内存占用的热更新，使得Unity游戏在运行时能够动态加载更新的脚本。此框架我认为就如她的标题一样---次世代热更框架。
+
+#### 4.4.1.4 对比分析
+
+| 框架                                                         | 性能   | 集成度                         | 侵入性 | 社区支持 | 学习曲线           | 灵活性 |
+| ------------------------------------------------------------ | ------ | ------------------------------ | ------ | -------- | ------------------ | ------ |
+| [xlua-framework](https://github.com/smilehao/xlua-framework) | 高性能 | 与C#无缝集成                   | 大     | 大       | 初学阶段可能较陡峭 | 高     |
+| [LuaFramework_UGUI_V2](https://github.com/jarjin/LuaFramework_UGUI_V2) | 一般   | UGUI                           | 大     | 中       | 对UI整合相对复杂   | 中等   |
+| [JEngine](https://github.com/JasonXuDeveloper/JEngine)       | 高性能 | 提供完善的资源管理和热更新机制 | 中     | 中       | 学习曲线适中       | 高     |
+| [HybridCLR](https://github.com/focus-creative-games/hybridclr) | 高性能 | 支持ILRuntime和Mono两种模式    | 小     | 大       | 学习曲线适中       | 高     |
 
 ### 4.4.2 服务端
 
-#### 4.4.2.1 ILRuntime
+**Skynet**的业务层由Lua语言编写，可以使用常规的Lua热更新方法，除此之外，**Skynet**的**Actor**架构还提供了利 用“**独立虚拟机**”作为“**服务**”级别热更新的能力，以及“注入补 丁”的热更新方案。
 
-#### 4.4.2.2 Skynet
+**Skynet**还提供了一种称为**inject**的热更新 方案，写一份补丁文件，把它注入某个服务，就可以单 独修复这个服务的Bug。
+
+| 能够热更新内容                     | 难度 | 注意事项                                                     |
+| ---------------------------------- | ---- | ------------------------------------------------------------ |
+| 配置表                             | 低   | 只需保证程序能引用到新版本的表即可，实现热更新的难度很低     |
+| 库函数（数学运算、字符处理方法等） | 较低 | 无状态的方法易于抽离出来，实现热更新的难度相对较低           |
+| 消息处理方法                       | 低   | 方法一般有统一调用口，容易实现替换。编写方法时需限制使用可能引起状态的写法（如协程、定时） |
+| 通信协议格式                       | 低   | 独立热更新协议格式相对简单。注意若多个模块用到同一协议，修改协议会涉及多个模块的修改，难度较大 |
+| 数据结构                           | 较高 | 数据结构被多个模块使用，可读写性使得与内存中的旧值对应较为困难。更新时需要考虑多模块修改的复杂性 |
