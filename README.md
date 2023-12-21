@@ -416,14 +416,32 @@ Rock GO是一个开源的Golang框架，旨在提供简单易用的API和高性�
 
 ## 4.1 整体性方案
 
-### 4.1.1 DOTS Unity全家桶
+### 4.1.1 Unity Cloud
+
+#### 4.1.1.1 方案构成
 
 [DOTS](https://unity.com/cn/dots) + [Netcode](https://unity.com/products/netcode) + [Game Server Hosting](https://cloud.unity.com/)
+
+![4-1-1-1Relay](./img/4-1-1-4relay)
+
+这一整套技术方案构建了一个统一的游戏开发生态系统。具体来说：
+
+- **DOTS (Data-Oriented Tech Stack):** 用于构建游戏端的开发框架，采用ECS（Entity Component System）架构，以提高游戏性能。通过 DOTS，游戏可以更有效地处理大规模数据。
+
+- **Netcode:** 作为网络传输方案，专注于提供游戏中实体同步、状态同步等网络通信的支持。Netcode有助于实现高性能的多人在线游戏体验。
+
+- **Game Server Hosting:** 则提供了游戏服务器的托管服务，包括Unity Cloud服务中的[Relay](https://docs.unity.com/ugs/manual/relay/manual/introduction)或者[Multiplay](https://docs.unity.com/ugs/en-us/manual/game-server-hosting/manual/welcome-to-multiplay)。Relay是官方提供的中继服务器，而Multiplay则提供更高度可定制化的服务。此外，Unity的服务还提供数据分析、数据存储、应用分发、语音等多个方面的功能。
+
+这个方案主要应用于游戏的游戏同步部分，确保游戏端和服务器之间的高效通信。然而，对于一些基础的用户管理和数据管理功能，建议使用自己开发的Web服务器，以实现更灵活的定制和满足特定需求。
+
+#### 4.1.1.2 优缺点
 
 | 优点                                       | 缺点                                                         |
 | ------------------------------------------ | ------------------------------------------------------------ |
 | Unity官方推荐，确保框架的技术支持和更新。  | 游戏端开发成本较高，学习和适应DOTS的开发方式需要一定时间。   |
 | 游戏数据分析详细，有丰富的工具和插件支持。 | 无法定制化管理后台，对于一些特定需求可能需要额外的开发工作。 |
+
+这个方案适合于追求高性能和使用Unity全家桶的开发者，但需要在开发成本和定制化管理后台之间做权衡。
 
 ### 4.1.2 ET 独立开发
 
