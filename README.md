@@ -580,16 +580,16 @@ WebSocket是一种在单个TCP连接上进行全双工通信的协议。通过�
 
 #### 4.4.1.3 HybridCLR
 
-HybridCLR: 一个支持Unity的热更新框架，同时支持ILRuntime和Mono模式。HybridCLR的设计目标是实现高性能、低内存占用的热更新，使得Unity游戏在运行时能够动态加载更新的脚本。此框架我认为就如她的标题一样---次世代热更框架。
+[HybridCLR](https://github.com/focus-creative-games/hybridclr): 是一个特性完、零成本、高性能、低内存的近乎完美的Unity全平台原生C#热更方案。HybridCLR的设计目标是实现高性能、低内存占用的热更新，使得Unity游戏在运行时能够动态加载更新的脚本。此框架我认为就如她的标题一样---次世代热更框架。
 
 #### 4.4.1.4 对比分析
 
-| 框架                                                         | 性能   | 集成度                         | 侵入性 | 社区支持 | 学习曲线           | 灵活性 |
-| ------------------------------------------------------------ | ------ | ------------------------------ | ------ | -------- | ------------------ | ------ |
-| [xlua-framework](https://github.com/smilehao/xlua-framework) | 高性能 | 与C#无缝集成                   | 大     | 大       | 初学阶段可能较陡峭 | 高     |
-| [LuaFramework_UGUI_V2](https://github.com/jarjin/LuaFramework_UGUI_V2) | 一般   | UGUI                           | 大     | 中       | 对UI整合相对复杂   | 中等   |
-| [JEngine](https://github.com/JasonXuDeveloper/JEngine)       | 高性能 | 提供完善的资源管理和热更新机制 | 中     | 中       | 学习曲线适中       | 高     |
-| [HybridCLR](https://github.com/focus-creative-games/hybridclr) | 高性能 | 支持ILRuntime和Mono两种模式    | 小     | 大       | 学习曲线适中       | 高     |
+| 框架                                                         | 性能 | 侵入性 | 社区支持 | 学习曲线           | 灵活性 |
+| ------------------------------------------------------------ | ---- | ------ | -------- | ------------------ | ------ |
+| [xlua-framework](https://github.com/smilehao/xlua-framework) | 低   | 大     | 大       | 初学阶段可能较陡峭 | 中     |
+| [LuaFramework_UGUI_V2](https://github.com/jarjin/LuaFramework_UGUI_V2) | 低   | 大     | 中       | 对UI整合相对复杂   | 中     |
+| [JEngine](https://github.com/JasonXuDeveloper/JEngine)       | 中   | 中     | 中       | 学习曲线适中       | 高     |
+| [HybridCLR](https://github.com/focus-creative-games/hybridclr) | 高   | 小     | 大       | 学习曲线适中       | 高     |
 
 ### 4.4.2 服务端
 
