@@ -422,7 +422,7 @@ Rock GO是一个开源的Golang框架，旨在提供简单易用的API和高性�
 
 [DOTS](https://unity.com/cn/dots) + [Netcode](https://unity.com/products/netcode) + [Game Server Hosting](https://cloud.unity.com/)
 
-![4-1-1-1Relay](./img/4-1-1-4relay)
+![4-1-1-1Relay](./img/4-1-1-4relay.png)
 
 这一整套技术方案构建了一个统一的游戏开发生态系统。具体来说：
 
