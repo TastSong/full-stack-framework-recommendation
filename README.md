@@ -1,5 +1,5 @@
 # 全栈架构推荐
-<img src="./img/icon.png" style="zoom:50%;" />
+<img src="./img/icon.jpg" style="zoom:50%;" />
 
 # 零、序
 
